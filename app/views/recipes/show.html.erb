@@ -1,0 +1,7 @@
+<h1>
+  <%= @recipe.name %>
+</h1>
+
+<%= link_to('Back', recipes_path) %>
+<%= link_to('Edit', edit_recipe_path) %>
+<%= link_to('Delete', "/recipes/#{@recipe.id}/destroy") %>
